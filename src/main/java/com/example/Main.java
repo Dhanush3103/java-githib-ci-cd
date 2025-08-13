@@ -52,4 +52,25 @@ public class Main {
     public static String createEmployeeId(int id) {
         return String.format("E%05d", id);
     }
+
+/**
+ * Checks if a number is even.
+ * @param number the number to check
+ * @return true if even, false if odd
+ */
+public static boolean isEven(int number) {
+    return number % 2 == 0;
+}
+
+/**
+ * Converts a string to uppercase.
+ * @param input the string to convert
+ * @return the uppercase string, or null if input is null
+ */
+public static String toUpperCase(String input) {
+    if (input == null) return null;
+    return input.toUpperCase();
+
+
+    }
 }

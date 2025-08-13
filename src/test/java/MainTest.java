@@ -58,4 +58,22 @@ public class MainTest {
         String actual = Main.createEmployeeId(id);
         assert expected.equals(actual) : "Expected: " + expected + ", but got: " + actual;
     }
+
+    @Test
+    public void testIsEven() {
+    assert Main.isEven(4) : "Expected true for even number";
+    assert !Main.isEven(5) : "Expected false for odd number";
+}
+
+@Test
+public void testToUpperCase() {
+    String input = "hello";
+    String expected = "HELLO";
+    assert expected.equals(Main.toUpperCase(input)) : "Expected: " + expected;
+}
+
+@Test
+public void testToUpperCaseWithNull() {
+    assert Main.toUpperCase(null) == null : "Expected null";
+}
 }
